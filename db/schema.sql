@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS museum_db;
+DROP DATABASE IF EXISTS characters_db;
 
-CREATE DATABASE museum_db;
+CREATE DATABASE characters_db;
