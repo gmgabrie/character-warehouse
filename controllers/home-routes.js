@@ -1,24 +1,24 @@
 const router = require("express").Router();
-const { Gallery, Painting } = require("../models");
+const { Characters, User } = require("../models");
 
-// GET all galleries for homepage
+// GET all characters for homepage
 router.get("/", async (req, res) => {
   try {
-    // const dbGalleryData = await Gallery.findAll({
-    //   include: [
-    //     {
-    //       model: Painting,
-    //       attributes: ["filename", "description"],
-    //     },
-    //   ],
-    // });
+    const dbCharacterData = await Characters.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ["username"],
+        },
+      ],
+    });
 
-    // const galleries = dbGalleryData.map((gallery) =>
-    //   gallery.get({ plain: true })
-    // );
+    const characters = dbCharacterData.map((characters) =>
+      characters.get({ plain: true })
+    );
     // Send over the 'loggedIn' session variable to the 'homepage' template
     res.render("homepage", {
-      // galleries,
+      characters,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {

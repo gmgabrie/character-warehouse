@@ -9,6 +9,7 @@ const charactersData = [
     Weight: 185,
     Gender: "Male",
     Story: "Story of Batman goes here.",
+    User_id: 1,
   },
   {
     Name: "Robin",
@@ -18,6 +19,7 @@ const charactersData = [
     Weight: 185,
     Gender: "Male",
     Story: "Story of Robin goes here.",
+    User_id: 1,
   },
 ];
 
