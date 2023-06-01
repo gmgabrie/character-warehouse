@@ -1,3 +1,30 @@
-{{#each users as |user|}}
+{{!-- {{#each users as |user|}}
 {{> user-details}}
+{{/each}} --}}
+
+<!-- Loop over each object in the characters array -->
+{{#each characters as |character|}}
+  <div class="row mb-4 project">
+    <div class="col-md-5">
+      <h2>
+        {{character.Name}}
+      </h2>
+      <p>Race:
+        {{character.Race}}
+        Age:
+        {{character.Age}}
+        Height:
+        {{character.Height}}
+        Weight:
+        {{character.Weight}}
+        Gender:
+        {{character.Gender}}
+      </p>
+      <p>Story: {{character.Story}}</p>
+      <p>Created by
+        {{character.user.username}}
+        on
+        {{format_date character.createdAt}}</p>
+    </div>
+  </div>
 {{/each}}
