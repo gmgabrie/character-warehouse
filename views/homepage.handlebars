@@ -4,26 +4,29 @@
 
 <!-- Loop over each object in the characters array -->
 {{#each characters as |character|}}
-  <div class="row mb-4 project">
-    <div class="col-md-5">
+  <div class="row row-cols-4" id="ramen">
+    <div class="col-md-4" id="character">
       <h2>
         {{character.Name}}
       </h2>
-      <p>Race:
-        {{character.Race}}
-        Age:
-        {{character.Age}}
-        Height:
-        {{character.Height}}
-        Weight:
-        {{character.Weight}}
-        Gender:
-        {{character.Gender}}
-      </p>
-      <p>Story: {{character.Story}}</p>
-      <p>Created by
-        {{character.user.username}}
-        on
+     <img src= "/character-warehouse/public/images/human male sil.jpg" width="200" height="230" align="left">
+
+      <p><b>Race:</b>
+        {{character.Race}}</p>
+        <p><b>Age:</b>
+        {{character.Age}}</p>
+
+        <p><b>Height:</b>
+        {{character.Height}}</p>
+        <p><b>Weight:</b>
+        {{character.Weight}}</p>
+        <p><b>Gender:</b>
+        {{character.Gender}}</p>
+      
+      <p><b>Story:</b> {{character.Story}}</p>
+      <p><b>Created by</b>
+        {{character.user.username}}</p>
+        <p>on
         {{format_date character.createdAt}}</p>
     </div>
   </div>
