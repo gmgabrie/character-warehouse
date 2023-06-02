@@ -5,3 +5,45 @@
   --footer: #B6F7C1;
 }
 
+header {
+
+  text-align: center;
+
+}
+
+html {
+  background-color: var(--primary);
+}
+
+nav {
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+
+
+#carddd {
+
+  background-color: #B6F7C1;
+  
+} 
+
+
+
+
+
+p {
+
+  padding: 0px;
+  margin: 0px;
+}
+img {
+
+  padding: 5px;
+}
