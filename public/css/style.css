@@ -1,42 +1,51 @@
 :root {
-  --primary: #373640;
-  --secondary: #63686E;
-  --tertiary: #7E97A6;
-  --footer: #B6F7C1;
+  --primary: #8D7B68;
+  --secondary: #A4907C;
+  --tertiary: #C8B6A6;
+  --footer: #F1DEC9;
 }
 
 header {
 
   text-align: center;
+  border-style: solid;
+  border-width: 8px;
+  border-color: var(--primary);
+  border-radius: 5px;
 
 }
 
 html {
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 nav {
   text-align: center;
+  
+}
+
+#homebtn{
+
+  padding-right: 20px;
 }
 
 h2 {
   font-size: 20px;
   text-align: center;
 }
+.gallery {
 
-
-
-
-
+  padding: 10px;
+}
 #carddd {
 
-  background-color: #B6F7C1;
+  background-color: var(--secondary);
+  border-style: solid;
+  border-color: var(--primary);
+  border-width: 8px;
+  border-radius: 5px;
   
 } 
-
-
-
-
 
 p {
 
@@ -47,3 +56,31 @@ img {
 
   padding: 5px;
 }
+
+footer {
+  text-align: center;
+  background-color: var(--footer);
+}
+
+#carddd {
+
+  display: block;
+
+}
+
+/* img {
+
+  border-style: solid;
+  border-color: var(--primary);
+  border-width: 5px;
+} */
+
+.login-card {
+
+  border-style: solid;
+  border-color: var(--primary);
+  padding-right: 10px;
+  border-radius: 5px;
+  border-width: 8px;
+}
+
