@@ -1,16 +1,6 @@
 
-{{#each users as |user|}}
-<button id="btn">Create New Character</button>
-<div id="creation">{{character-creation}}</div>
-{{> user-details}}
-{{/each}} 
 
 <!-- Loop over each object in the characters array -->
-
-
-<button id="btn">Create New Character</button>
-<div id="creation">{{character-creation}}</div>
-
 
 
 <div class="container">
@@ -22,7 +12,6 @@
     <div class="row">
 
         {{#each characters as |character|}}
-
         <div class="col-md-4" >
       <h2>
         {{character.Name}}
