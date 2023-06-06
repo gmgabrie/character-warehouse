@@ -39,7 +39,7 @@ Characters.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
-    user_id: {
+    User_id: {
       type: DataTypes.INTEGER,
       references: {
         model: "user",
